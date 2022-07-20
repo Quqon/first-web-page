@@ -36,10 +36,6 @@ body{
     transform: scale(1.9);
 }
 
-.Link_2{
-    transition: all 0.2s linear;
-}
-
 .Link_2:hover{
     transform: scale(1.9);
     margin-left:31.5px; 
