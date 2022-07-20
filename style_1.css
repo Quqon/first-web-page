@@ -1,0 +1,252 @@
+body{
+    display: flex;
+    /* align-items: center; *//*세로줄 가운데*/
+    justify-content: center; /*가로줄가운데*/
+    min-height: 100vh;
+    position: relative; /*부모에 relative를 주고 자식에게 absolute를 주면 그둘을 같은 위치에 오게 할수 있음.*/
+    text-align: center;
+    
+}
+
+.Layer_2 {
+    background-image: url("./Layer 2.png");
+    position: absolute;
+    
+    left: 340px;
+    top: 253px;
+    width: 86px;
+    height: 61px;
+    
+} 
+
+img {
+    background: url(./배경3.jpg) no-repeat center fixed; 
+    background-size: contain;
+    background-size: cover; 
+    
+    width: 500px;
+    height:auto;
+    border-radius: 80px;
+    padding:8px;
+    border:3px solid black;
+    align-items: center;
+    margin:130px;
+} 
+
+@media(max-width:500px){
+    img{
+        width:1000px;
+        height:1000px;
+    }
+    .{
+        font-size:7px;
+    }
+} 
+
+.fade-in-box {
+    display: inline-block;
+    animation: fadeIn 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    animation-fill-mode: backwards;
+    animation-delay: 1s;  
+    position:absolute;
+    font-size:75px;
+    color:black;
+    margin-top: 20px;
+    font-family: 'DOSGothic';
+}
+
+.fade-in-box2 {
+    display: inline-block;
+    animation: fadeIn 5s;
+    -moz-animation: fadein 5s; 
+    -webkit-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation-fill-mode: backwards;
+    animation-delay: 8s;  
+    position:absolute;
+    
+    font-size:100px;
+    color:black;
+}
+
+.fade-in-box3 {
+    display: inline-block;
+    animation: fadeIn 5s;
+    -moz-animation: fadein 5s; 
+    -webkit-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation-fill-mode: backwards;
+    animation-delay: 8s;  
+    position:absolute;
+    
+    font-size:100px;
+    color:black;
+    margin:550px;
+    
+    width:1000px;
+}
+
+.fade-in-box4 {
+    display: inline-block;
+    animation: fadeIn 0.5s;
+    -moz-animation: fadein 0.5s; 
+    -webkit-animation: fadein 0.5s; 
+    -o-animation: fadein 0.5s; 
+    animation-fill-mode: backwards;
+    animation-delay: 1.1s;  
+    position:absolute;
+    
+    font-size:100px;
+    color:black;
+    margin-top: 450px;
+    margin-left:1000px;
+    
+    width:1000px;
+}
+
+.font{
+    font-size: 30px;
+    font-family: 'DOSGothic';
+}
+
+.margin{
+    margin-top: 90px;
+    margin-right: 500px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out-box {
+    display: inline-block;
+    animation: fadeInDown 1s, fadeout 1s;
+    -moz-animation: fadeInDown 1s, fadeout 1s; /* Firefox */
+    -webkit-animation: fadeInDown 1s, fadeout 1s; /* Safari and Chrome */
+    -o-animation: fadeInDown 1s, fadeout 1s; /* Opera */
+    animation-fill-mode: forwards; /*animation이 실행되고 마지막 상태를 유지함*/
+    /* padding: 20px; */
+    font-size: 75px;
+    position:absolute;
+    color:black;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'DOSGothic';
+}
+
+.fade-out-box2{
+    animation:fadeout 3.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInDown{
+    0%{
+        opacity:0;
+        transform:translate3d(0, -50%, 0);
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0);
+    }
+}
+
+.test_obj{
+    position:relative;
+    animation:fadeInDown 0.5s;
+}
+
+/* .CSS Selector {
+    /* 포인터 안되게 막기 : none  
+    pointer-events : none;
+    animation-fill-mode: forwards;
+}
+
+.CSS Selector2 {
+    /* 포인터 다시 동작 : auto 
+    pointer-events : auto;
+    animation-fill-mode: backwords;
+    animation-delay: 10s;
+} */
+
+a{
+    text-decoration: none; /*링크밑줄없애기*/
+    color:inherit; /*링크색없애기*/
+}
+
+/* .font_property{
+    margin:400px;
+} */
+
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
