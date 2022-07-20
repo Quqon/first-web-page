@@ -5,7 +5,7 @@ body{
 
 .nav_grid{
     display:grid;
-    grid-template-columns: 1300px 60px 150px;
+    grid-template-columns: 1300px 60px 60px 60px;
     /* border:1px solid gray; */
     background-color:black;
 }
@@ -63,6 +63,16 @@ a{
     width:50px;
     height:auto;
     margin-top:10px;
+    border-radius: 70%;
+    border: 2px solid black;
+    padding:3px;
+}
+
+.v-img-size{
+    background-color: white;
+    width:50px;
+    height:auto;
+    /* margin-top:10px; */
     border-radius: 70%;
     border: 2px solid black;
     padding:3px;
